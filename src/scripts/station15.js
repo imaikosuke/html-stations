@@ -11,6 +11,13 @@ async function getData() {
 }
 
 function test() {
-  return
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve([
+        { id: 1, full_name: '大木 優' },
+        { id: 2, full_name: '山田 太郎' }
+      ])
+    }, 3000)
+  })
 }
 
