@@ -14,7 +14,7 @@ test('タブレットおよびスマートフォンでタイトルの文字が�
     height: 1000,
   })
 
-  const title = await page.locator('.card__title').first()
+  const title = await page.locator('.card__title1').first()
   fontSize = await title.evaluate(node => {
     const computedStyle = window.getComputedStyle(node)
     return parseFloat(computedStyle.getPropertyValue('font-size'))
@@ -25,7 +25,7 @@ test('タブレットおよびスマートフォンでタイトルの文字が�
     height: 1000,
   })
 
-  const titleMedium = await page.locator('.card__title').first()
+  const titleMedium = await page.locator('.card__title1').first()
   const fontSizeMedium = await titleMedium.evaluate(node => {
     const computedStyle = window.getComputedStyle(node)
     return parseFloat(computedStyle.getPropertyValue('font-size'))
@@ -38,7 +38,7 @@ test('タブレットおよびスマートフォンでタイトルの文字が�
     height: 1000,
   })
 
-  const titleSmall = await page.locator('.card__title').first()
+  const titleSmall = await page.locator('.card__title1').first()
   const fontSizeSmall = await titleSmall.evaluate(node => {
     const computedStyle = window.getComputedStyle(node)
     return parseFloat(computedStyle.getPropertyValue('font-size'))
