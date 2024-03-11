@@ -38,7 +38,7 @@ test.beforeEach(async ({ page }) => {
 test('カードの背景色とタイトルのコントラスト値が十分に大きい', async ({
   page,
 }) => {
-  const cardTitle = await page.locator('.card__title') //.first()
+  const cardTitle = await page.locator('.card__title1') //.first()
   const bgColor = await getBackgroundRecursively(cardTitle)
 
   test
